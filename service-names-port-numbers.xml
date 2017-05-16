@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="service-names-port-numbers">
   <title>Service Name and Transport Protocol Port Number Registry</title>
   <category>Service Names and Transport Protocol Port Numbers</category>
-  <updated>2016-09-21</updated>
+  <updated>2017-05-12</updated>
   <xref type="rfc" data="rfc6335"/>
   <expert>TCP/UDP: Joe Touch; Eliot Lear, Allison Mankin, Markku Kojo, Kumiko Ono, Martin Stiemerling, 
 Lars Eggert, Alexey Melnikov, Wes Eddy, Alexander Zimmermann, Brian Trammell, and Jana Iyengar
@@ -21,11 +21,11 @@ documented in <xref type="rfc" data="rfc6335"/>.
 Port numbers are assigned in various ways, based on three ranges: System
 Ports (0-1023), User Ports (1024-49151), and the Dynamic and/or Private
 Ports (49152-65535); the difference uses of these ranges is described in
-<xref type="rfc" data="rfc6335"/>. System Ports are assigned by IETF
-process for standards-track protocols, as per <xref type="rfc" data="rfc6335"/>.  User Ports
-are assigned by IANA using the "IETF Review" process, the "IESG 
-Approval" process, or the "Expert Review" process, as per
-<xref type="rfc" data="rfc6335"/>.  Dynamic Ports are not assigned.
+<xref type="rfc" data="rfc6335"/>. According to Section 8.1.2 of <xref type="rfc" data="rfc6335"/>, System Ports are 
+assigned by the "IETF Review" or "IESG Approval" procedures described in 
+<xref type="rfc" data="rfc5226"/>. User Ports are assigned by IANA using the "IETF Review" process, 
+the "IESG Approval" process, or the "Expert Review" process, as per 
+<xref type="rfc" data="rfc6335"/>. Dynamic Ports are not assigned.
 
 The registration procedures for service names and port numbers are
 described in <xref type="rfc" data="rfc6335"/>.
@@ -414,6 +414,7 @@ or prior to IANA registration.
     <name>smtp</name>
     <protocol>tcp</protocol>
     <xref type="person" data="Jon_Postel"/>
+    <xref type="rfc" data="rfc5321"/>
     <description>Simple Mail Transfer</description>
     <number>25</number>
   </record>
@@ -421,6 +422,7 @@ or prior to IANA registration.
     <name>smtp</name>
     <protocol>udp</protocol>
     <xref type="person" data="Jon_Postel"/>
+    <xref type="rfc" data="rfc5321"/>
     <description>Simple Mail Transfer</description>
     <number>25</number>
   </record>
@@ -1788,17 +1790,19 @@ common service discovery mechanisms.</note>
     <description>SQL Services</description>
     <number>118</number>
   </record>
-  <record>
+  <record updated="2017-02-03">
     <name>nntp</name>
     <protocol>tcp</protocol>
-    <xref type="person" data="Phil_Lapsley"/>
+    <xref type="rfc" data="rfc3977"/>
+    <xref type="person" data="IESG"/>
     <description>Network News Transfer Protocol</description>
     <number>119</number>
   </record>
-  <record>
+  <record updated="2017-02-03">
     <name>nntp</name>
     <protocol>udp</protocol>
-    <xref type="person" data="Phil_Lapsley"/>
+    <xref type="rfc" data="rfc3977"/>
+    <xref type="person" data="IESG"/>
     <description>Network News Transfer Protocol</description>
     <number>119</number>
   </record>
@@ -2128,6 +2132,7 @@ Port 126 Previously assigned to application above</note>
     <name>imap</name>
     <protocol>tcp</protocol>
     <xref type="person" data="Mark_Crispin_2"/>
+    <xref type="rfc" data="rfc3501"/>
     <description>Internet Message Access Protocol</description>
     <number>143</number>
   </record>
@@ -2135,6 +2140,7 @@ Port 126 Previously assigned to application above</note>
     <name>imap</name>
     <protocol>udp</protocol>
     <xref type="person" data="Mark_Crispin_2"/>
+    <xref type="rfc" data="rfc3501"/>
     <description>Internet Message Access Protocol</description>
     <number>143</number>
   </record>
@@ -5352,18 +5358,20 @@ common service discovery mechanisms.</note>
     <description>IASD</description>
     <number>432</number>
   </record>
-  <record>
+  <record updated="2017-02-03">
     <name>nnsp</name>
     <protocol>tcp</protocol>
-    <xref type="person" data="Rob_Robertson"/>
-    <description>NNSP</description>
+    <xref type="rfc" data="rfc3977"/>
+    <xref type="person" data="IESG"/>
+    <description>NNTP for transit servers (NNSP)</description>
     <number>433</number>
   </record>
-  <record>
+  <record updated="2017-02-03">
     <name>nnsp</name>
     <protocol>udp</protocol>
-    <xref type="person" data="Rob_Robertson"/>
-    <description>NNSP</description>
+    <xref type="rfc" data="rfc3977"/>
+    <xref type="person" data="IESG"/>
+    <description>NNTP for transit servers (NNSP)</description>
     <number>433</number>
   </record>
   <record>
@@ -7171,17 +7179,19 @@ common service discovery mechanisms.</note>
     <description>chcmd</description>
     <number>562</number>
   </record>
-  <record>
+  <record updated="2017-02-03">
     <name>nntps</name>
     <protocol>tcp</protocol>
-    <xref type="person" data="Kipp_E_B_Hickman_2"/>
+    <xref type="rfc" data="rfc4642"/>
+    <xref type="person" data="IESG"/>
     <description>nntp protocol over TLS/SSL (was snntp)</description>
     <number>563</number>
   </record>
-  <record>
+  <record updated="2017-02-03">
     <name>nntps</name>
     <protocol>udp</protocol>
-    <xref type="person" data="Kipp_E_B_Hickman_2"/>
+    <xref type="rfc" data="rfc4642"/>
+    <xref type="person" data="IESG"/>
     <description>nntp protocol over TLS/SSL (was snntp)</description>
     <number>563</number>
   </record>
@@ -9975,7 +9985,7 @@ common service discovery mechanisms.</note>
     <description>Unassigned</description>
     <number>849-852</number>
   </record>
-  <record date="2015-10-08" updated="2016-05-18">
+  <record date="2015-10-08" updated="2017-01-23">
     <name>domain-s</name>
     <protocol>tcp</protocol>
     <assignee>
@@ -9983,11 +9993,12 @@ common service discovery mechanisms.</note>
     </assignee>
     <xref type="person" data="IETF_Chair"/>
     <xref type="rfc" data="rfc7858"/>
+    <xref type="rfc" data="rfc8094"/>
     <description>DNS query-response protocol run over TLS/DTLS</description>
     <number>853</number>
     <note/>
   </record>
-  <record date="2015-10-08" updated="2016-05-18">
+  <record date="2015-10-08" updated="2017-01-23">
     <name>domain-s</name>
     <protocol>udp</protocol>
     <assignee>
@@ -9995,13 +10006,38 @@ common service discovery mechanisms.</note>
     </assignee>
     <xref type="person" data="IETF_Chair"/>
     <xref type="rfc" data="rfc7858"/>
+    <xref type="rfc" data="rfc8094"/>
     <description>DNS query-response protocol run over TLS/DTLS</description>
     <number>853</number>
     <note/>
   </record>
+  <record date="2017-04-03">
+    <name>dlep</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="IESG"/>
+    </assignee>
+    <xref type="person" data="IETF_Chair"/>
+    <xref type="draft" data="RFC-ietf-manet-dlep-29"/>
+    <description>Dynamic Link Exchange Protocol (DLEP)</description>
+    <number>854</number>
+    <note/>
+  </record>
+  <record date="2017-04-03">
+    <name>dlep</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="IESG"/>
+    </assignee>
+    <xref type="person" data="IETF_Chair"/>
+    <xref type="draft" data="RFC-ietf-manet-dlep-29"/>
+    <description>Dynamic Link Exchange Protocol (DLEP)</description>
+    <number>854</number>
+    <note/>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>854-859</number>
+    <number>855-859</number>
   </record>
   <record updated="2013-08-27">
     <name>iscsi</name>
@@ -10293,17 +10329,19 @@ common service discovery mechanisms.</note>
     <description>ftp protocol, control, over TLS/SSL</description>
     <number>990</number>
   </record>
-  <record>
+  <record updated="2017-02-10">
     <name>nas</name>
     <protocol>tcp</protocol>
+    <xref type="rfc" data="rfc4707"/>
     <xref type="person" data="Vera_Heinau"/>
     <xref type="person" data="Heiko_Schlichting"/>
     <description>Netnews Administration System</description>
     <number>991</number>
   </record>
-  <record>
+  <record updated="2017-02-10">
     <name>nas</name>
     <protocol>udp</protocol>
+    <xref type="rfc" data="rfc4707"/>
     <xref type="person" data="Vera_Heinau"/>
     <xref type="person" data="Heiko_Schlichting"/>
     <description>Netnews Administration System</description>
@@ -10432,9 +10470,25 @@ common service discovery mechanisms.</note>
     <description/>
     <number>1000</number>
   </record>
+  <record date="2016-11-01">
+    <name>webpush</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="IESG"/>
+    </assignee>
+    <xref type="person" data="IETF_Chair"/>
+    <description>HTTP Web Push</description>
+    <xref type="rfc" data="rfc8030"/>
+    <number>1001</number>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>1001</number>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>1001-1007</number>
+    <number>1002-1007</number>
   </record>
   <record>
     <protocol>udp</protocol>
@@ -29600,9 +29654,24 @@ common service discovery mechanisms.</note>
     <number>2376</number>
     <xref type="person" data="Christopher_Liljenstolpe"/>
   </record>
+  <record date="2016-12-23">
+    <name>swarm</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Docker_Inc"/>
+    </assignee>
+    <description>RPC interface for Docker Swarm</description>
+    <number>2377</number>
+    <xref type="person" data="Mike_Goelzer"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>2377</number>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>2377-2378</number>
+    <number>2378</number>
   </record>
   <record date="2014-07-09">
     <name>etcd-client</name>
@@ -45385,14 +45454,14 @@ common service discovery mechanisms.</note>
   <record>
     <name>lsp-ping</name>
     <protocol>tcp</protocol>
-    <xref type="rfc" data="rfc4379"/>
+    <xref type="draft" data="RFC-ietf-mpls-rfc4379bis-09"/>
     <description>MPLS LSP-echo Port</description>
     <number>3503</number>
   </record>
   <record>
     <name>lsp-ping</name>
     <protocol>udp</protocol>
-    <xref type="rfc" data="rfc4379"/>
+    <xref type="draft" data="RFC-ietf-mpls-rfc4379bis-09"/>
     <description>MPLS LSP-echo Port</description>
     <number>3503</number>
   </record>
@@ -51241,19 +51310,25 @@ common service discovery mechanisms.</note>
     <description>PacketCableMultimediaCOPS</description>
     <number>3918</number>
   </record>
-  <record date="2003-11">
+  <record date="2003-11" updated="2017-01-25">
     <name>hyperip</name>
     <protocol>tcp</protocol>
-    <xref type="person" data="Dave_Reiland"/>
+    <assignee>
+      <xref type="person" data="Network_Executive_Software_Inc"/>
+    </assignee>
     <description>HyperIP</description>
     <number>3919</number>
+    <xref type="person" data="Nancy_Golio"/>
   </record>
-  <record date="2003-11">
+  <record date="2003-11" updated="2017-01-25">
     <name>hyperip</name>
     <protocol>udp</protocol>
-    <xref type="person" data="Dave_Reiland"/>
+    <assignee>
+      <xref type="person" data="Network_Executive_Software_Inc"/>
+    </assignee>
     <description>HyperIP</description>
     <number>3919</number>
+    <xref type="person" data="Nancy_Golio"/>
   </record>
   <record date="2003-11">
     <name>exasoftport1</name>
@@ -53449,18 +53524,18 @@ common service discovery mechanisms.</note>
     <description>Zieto Socket Communications</description>
     <number>4072</number>
   </record>
-  <record date="2007-08-20">
+  <record date="2007-08-20" updated="2016-11-23">
     <name>iRAPP</name>
     <protocol>tcp</protocol>
-    <xref type="person" data="Vladimir_Bickov"/>
-    <description>iRAPP Server Protocol</description>
+    <xref type="person" data="Volodymyr_Bykov"/>
+    <description>Interactive Remote Application Pairing Protocol</description>
     <number>4073</number>
   </record>
-  <record date="2007-08-20">
+  <record date="2007-08-20" updated="2016-11-23">
     <name>iRAPP</name>
     <protocol>udp</protocol>
-    <xref type="person" data="Vladimir_Bickov"/>
-    <description>iRAPP Server Protocol</description>
+    <xref type="person" data="Volodymyr_Bykov"/>
+    <description>Interactive Remote Application Pairing Protocol</description>
     <number>4073</number>
   </record>
   <record date="2007-08-20">
@@ -55225,7 +55300,31 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>4194-4198</number>
+    <number>4194-4196</number>
+  </record>
+  <record date="2017-02-16">
+    <name>hctl</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Harman_International_Industries_Inc"/>
+    </assignee>
+    <description>Harman HControl Protocol</description>
+    <number>4197</number>
+    <xref type="person" data="Darin_Smith"/>
+  </record>
+  <record date="2017-02-16">
+    <name>hctl</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Harman_International_Industries_Inc"/>
+    </assignee>
+    <description>Harman HControl Protocol</description>
+    <number>4197</number>
+    <xref type="person" data="Darin_Smith"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>4198</number>
   </record>
   <record>
     <name>eims-admin</name>
@@ -55345,19 +55444,25 @@ common service discovery mechanisms.</note>
     <description>Hellgate London</description>
     <number>4306</number>
   </record>
-  <record date="2007-10-22">
-    <name>visicron-vs</name>
+  <record date="2007-10-22" updated="2017-05-12">
+    <name>trueconf</name>
     <protocol>tcp</protocol>
-    <xref type="person" data="Alexey_Vlaskin"/>
-    <description>Visicron Videoconference Service</description>
+    <assignee>
+      <xref type="person" data="Dmitry_Odintsov"/>
+    </assignee>
+    <description>TrueConf Videoconference Service</description>
     <number>4307</number>
+    <xref type="person" data="Lev_Yakupov"/>
   </record>
-  <record date="2007-10-22">
-    <name>visicron-vs</name>
+  <record date="2007-10-22" updated="2017-05-12">
+    <name>trueconf</name>
     <protocol>udp</protocol>
-    <xref type="person" data="Alexey_Vlaskin"/>
-    <description>Visicron Videoconference Service</description>
+    <assignee>
+      <xref type="person" data="Dmitry_Odintsov"/>
+    </assignee>
+    <description>TrueConf Videoconference Service</description>
     <number>4307</number>
+    <xref type="person" data="Lev_Yakupov"/>
   </record>
   <record date="2007-10-22">
     <name>compx-lockview</name>
@@ -55673,7 +55778,7 @@ common service discovery mechanisms.</note>
     <protocol>tcp</protocol>
     <assignee><xref type="person" data="IESG"/></assignee>
     <xref type="person" data="IETF_Chair"/>
-    <xref type="draft" data="RFC-ietf-netconf-call-home-17"/>
+    <xref type="rfc" data="rfc8071"/>
     <description>NETCONF Call Home (SSH)</description>
     <number>4334</number>
   </record>
@@ -55687,7 +55792,7 @@ common service discovery mechanisms.</note>
     <protocol>tcp</protocol>
     <assignee><xref type="person" data="IESG"/></assignee>
     <xref type="person" data="IETF_Chair"/>
-    <xref type="draft" data="RFC-ietf-netconf-call-home-17"/>
+    <xref type="rfc" data="rfc8071"/>
     <description>NETCONF Call Home (TLS)</description>
     <number>4335</number>
   </record>
@@ -55701,7 +55806,7 @@ common service discovery mechanisms.</note>
     <protocol>tcp</protocol>
     <assignee><xref type="person" data="IESG"/></assignee>
     <xref type="person" data="IETF_Chair"/>
-    <xref type="draft" data="RFC-ietf-netconf-call-home-17"/>
+    <xref type="rfc" data="rfc8071"/>
     <description>RESTCONF Call Home (TLS)</description>
     <number>4336</number>
   </record>
@@ -58443,7 +58548,41 @@ Further keys may be added in the future.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>4705-4724</number>
+    <number>4705-4710</number>
+  </record>
+  <record date="2017-01-12">
+    <name>trinity-dist</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="P3KI_GmbH"/>
+    </assignee>
+    <description>Trinity Trust Network Node Communication</description>
+    <number>4711</number>
+    <xref type="person" data="Gregor_Jehle"/>
+  </record>
+  <record date="2017-01-12">
+    <name>trinity-dist</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="P3KI_GmbH"/>
+    </assignee>
+    <description>Trinity Trust Network Node Communication</description>
+    <number>4711</number>
+    <xref type="person" data="Gregor_Jehle"/>
+  </record>
+  <record date="2017-01-12">
+    <name>trinity-dist</name>
+    <protocol>sctp</protocol>
+    <assignee>
+      <xref type="person" data="P3KI_GmbH"/>
+    </assignee>
+    <description>Trinity Trust Network Node Communication</description>
+    <number>4711</number>
+    <xref type="person" data="Gregor_Jehle"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>4712-4724</number>
   </record>
   <record date="2010-10-15">
     <name>truckstar</name>
@@ -58704,8 +58843,19 @@ Further keys may be added in the future.</note>
     <number>4745</number>
   </record>
   <record>
-    <description>Unassigned</description>
+    <protocol>tcp</protocol>
+    <description>Reserved</description>
     <number>4746</number>
+  </record>
+  <record date="2016-11-18">
+    <name>intelliadm-disc</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="IntelliAdmin_LLC"/>
+    </assignee>
+    <description>IntelliAdmin Discovery</description>
+    <number>4746</number>
+    <xref type="person" data="Steve_Wiseman"/>
   </record>
   <record date="2013-01-14">
     <name>buschtrommel</name>
@@ -58797,8 +58947,51 @@ Further keys may be added in the future.</note>
     <xref type="person" data="Alexander_Christian"/>
   </record>
   <record>
+    <protocol>tcp</protocol>
+    <description>Reserved</description>
+    <number>4754</number>
+  </record>
+  <record date="2016-10-05">
+    <name>gre-in-udp</name>
+    <protocol>udp</protocol>
+    <assignee><xref type="person" data="IESG"/></assignee>
+    <xref type="person" data="IETF_Chair"/>
+    <description>GRE-in-UDP Encapsulation</description>
+    <xref type="rfc" data="rfc8086"/>
+    <number>4754</number>
+  </record>
+  <record>
+    <protocol>tcp</protocol>
+    <description>Reserved</description>
+    <number>4755</number>
+  </record>
+  <record date="2016-10-05">
+    <name>gre-udp-dtls</name>
+    <protocol>udp</protocol>
+    <assignee><xref type="person" data="IESG"/></assignee>
+    <xref type="person" data="IETF_Chair"/>
+    <description>GRE-in-UDP Encapsulation with DTLS</description>
+    <xref type="rfc" data="rfc8086"/>
+    <number>4755</number>
+  </record>
+  <record date="2016-10-17">
+    <name>RDCenter</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="KLA_Tencor"/>
+    </assignee>
+    <description>Reticle Decision Center</description>
+    <number>4756</number>
+    <xref type="person" data="George_Hwa"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>4756</number>
+  </record>
+  <record>
     <description>Unassigned</description>
-    <number>4754-4773</number>
+    <number>4757-4773</number>
   </record>
   <record date="2016-09-16">
     <name>converge</name>
@@ -64069,7 +64262,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>5508-5552</number>
+    <number>5508-5549</number>
+  </record>
+  <record date="2017-01-03">
+    <name>cbus</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="MERG"/>
+    </assignee>
+    <description>Model Railway control using the CBUS message protocol</description>
+    <number>5550</number>
+    <xref type="person" data="Pete_Brownlow"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>5550</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>5551-5552</number>
   </record>
   <record date="2003-06">
     <name>sgi-eventmond</name>
@@ -65077,7 +65289,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>5701-5712</number>
+    <number>5701-5704</number>
+  </record>
+  <record date="2017-03-03">
+    <name>storageos</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="StorageOS"/>
+    </assignee>
+    <description>StorageOS REST API</description>
+    <number>5705</number>
+    <xref type="person" data="Simon_Croome"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>5705</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>5706-5712</number>
   </record>
   <record>
     <name>proshareaudio</name>
@@ -68138,7 +68369,33 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>6457-6470</number>
+    <number>6457-6463</number>
+  </record>
+  <record date="2017-03-02">
+    <name>ieee11073-20701</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="David_Gregorczyk"/>
+    </assignee>
+    <description>Port assignment for medical device communication in 
+    accordance to IEEE 11073-20701</description>
+    <number>6464</number>
+    <xref type="person" data="David_Gregorczyk"/>
+  </record>
+  <record date="2017-03-02">
+    <name>ieee11073-20701</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="David_Gregorczyk"/>
+    </assignee>
+    <description>Port assignment for medical device communication in 
+    accordance to IEEE 11073-20701</description>
+    <number>6464</number>
+    <xref type="person" data="David_Gregorczyk"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>6465-6470</number>
   </record>
   <record>
     <name>lvision-lm</name>
@@ -69110,9 +69367,31 @@ common service discovery mechanisms.</note>
     <description>AFE Stock Channel M/C</description>
     <number>6628</number>
   </record>
+  <record date="2016-11-29">
+    <name>nexgen-aux</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Allied_Electronics"/>
+    </assignee>
+    <description>Secondary, (non ANDI) multi-protocol multi-function interface to
+    the Allied ANDI-based family of forecourt controllers</description>
+    <number>6629</number>
+    <xref type="person" data="Robert_E_Tomenchok_Jr"/>
+  </record>
+  <record date="2016-11-29">
+    <name>nexgen-aux</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Allied_Electronics"/>
+    </assignee>
+    <description>Secondary, (non ANDI) multi-protocol multi-function interface to
+      the Allied ANDI-based family of forecourt controllers</description>
+    <number>6629</number>
+    <xref type="person" data="Robert_E_Tomenchok_Jr"/>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>6629-6630</number>
+    <number>6630</number>
   </record>
   <record date="2004-05-28">
     <description>Unassigned</description>
@@ -70031,7 +70310,22 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>6889-6900</number>
+    <number>6889</number>
+  </record>
+  <record date="2016-12-14">
+    <name>rtimeviewer</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Curtiss-Wright_Corporation"/>
+    </assignee>
+    <description>R*TIME Viewer Data Interface</description>
+    <number>6900</number>
+    <xref type="person" data="Robert_Ammon"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>6900</number>
   </record>
   <record date="2010-06-11">
     <name>jetstream</name>
@@ -70508,9 +70802,49 @@ common service discovery mechanisms.</note>
     <description>Talon Webserver</description>
     <number>7015</number>
   </record>
-  <record>
-    <description>Unassigned</description>
-    <number>7016-7017</number>
+  <record date="2017-03-27">
+    <name>spg</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="SPG_Controls_Ltd"/>
+    </assignee>
+    <description>SPG Controls Carrier</description>
+    <number>7016</number>
+    <xref type="person" data="Steve_Barton_2"/>
+  </record>
+  <record date="2017-03-27">
+    <name>spg</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="SPG_Controls_Ltd"/>
+    </assignee>
+    <description>SPG Controls Carrier</description>
+    <number>7016</number>
+    <xref type="person" data="Steve_Barton_2"/>
+  </record>
+  <record date="2017-04-28">
+    <name>grasp</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="IESG"/>
+    </assignee>
+    <description>GeneRic Autonomic Signaling Protocol 
+    (TEMPORARY - registered 2017-04-28, expires 2018-04-28)</description>
+    <number>7017</number>
+    <xref type="person" data="IETF_Chair"/>
+    <xref type="draft" data="draft-ietf-anima-grasp"/>
+  </record>
+  <record date="2017-04-28">
+    <name>grasp</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="IESG"/>
+    </assignee>
+    <description>GeneRic Autonomic Signaling Protocol 
+    (TEMPORARY - registered 2017-04-28, expires 2018-04-28)</description>
+    <number>7017</number>
+    <xref type="person" data="IETF_Chair"/>
+    <xref type="draft" data="draft-ietf-anima-grasp"/>
   </record>
   <record date="2011-05-19">
     <name>fisa-svc</name>
@@ -71152,9 +71486,31 @@ common service discovery mechanisms.</note>
     <description>DLIP</description>
     <number>7201</number>
   </record>
+  <record date="2017-02-22">
+    <name>pon-ictp</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Broadband_Forum_2"/>
+    </assignee>
+    <description>Inter-Channel Termination Protocol (ICTP) for multi-wavelength PON
+    (Passive Optical Network) systems</description>
+    <number>7202</number>
+    <xref type="person" data="William_Lupton"/>
+    <xref type="text">TR352</xref>
+    <xref type="text">Inter-Channel-Termination protocol (ICTP) is a peer-to-peer protocol with
+      a binary message format that is used by a set of optical line terminal (OLT) channel terminations (CT) 
+      comprising a 40-Gigabit-capable next-generation passive optical network (NG-PON2) system to
+      exchange channel profile configuration and status information and to coordinate the operation of tunable 
+      optical network units (ONUs) in a multi-wavelength channel environment.</xref>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>7702</number>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>7202-7214</number>
+    <number>7203-7214</number>
   </record>
   <record date="2016-02-26">
     <name>PS-Server</name>
@@ -71893,7 +72249,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>7475-7490</number>
+    <number>7475-7477</number>
+  </record>
+  <record date="2016-11-17">
+    <name>openit</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="OpeniT_Inc"/>
+    </assignee>
+    <description>IT Asset Management</description>
+    <number>7478</number>
+    <xref type="person" data="Monette_Maano"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>7478</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>7479-7490</number>
   </record>
   <record>
     <name>telops-lmd</name>
@@ -72566,7 +72941,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>7684-7688</number>
+    <number>7684-7686</number>
+  </record>
+  <record date="2016-09-29">
+    <name>bolt</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Neo_Technology_Inc"/>
+    </assignee>
+    <description>Bolt database connection</description>
+    <number>7687</number>
+    <xref type="person" data="Julian_Simpson"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>7687</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>7688</number>
   </record>
   <record date="2007-01">
     <name>collaber</name>
@@ -72617,8 +73011,28 @@ common service discovery mechanisms.</note>
     <number>7700</number>
   </record>
   <record>
+    <protocol>tcp</protocol>
+    <description>Reserved</description>
+    <number>7701</number>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>7701</number>
+  </record>
+  <record date="2017-01-24">
+    <name>nfapi</name>
+    <protocol>sctp</protocol>
+    <assignee>
+      <xref type="person" data="Small_Cell_Forum"/>
+    </assignee>
+    <description>SCF nFAPI defining MAC/PHY split</description>
+    <number>7701</number>
+    <xref type="person" data="Richard_Kennedy"/>
+  </record>
+  <record>
     <description>Unassigned</description>
-    <number>7701-7706</number>
+    <number>7702-7706</number>
   </record>
   <record date="2004-11">
     <name>sync-em7</name>
@@ -73646,9 +74060,29 @@ common service discovery mechanisms.</note>
     <description>MXI Generation II for z/OS</description>
     <number>8005</number>
   </record>
+  <record date="2017-04-04">
+    <name>wpl-analytics</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="World_Programming_Limited"/>
+    </assignee>
+    <description>World Programming analytics</description>
+    <number>8006</number>
+    <xref type="person" data="Thomas_Quarendon"/>
+  </record>
+  <record date="2017-04-04">
+    <name>wpl-disc</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="World_Programming_Limited"/>
+    </assignee>
+    <description>World Programming analytics discovery</description>
+    <number>8006</number>
+    <xref type="person" data="Thomas_Quarendon"/>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>8006-8007</number>
+    <number>8007</number>
   </record>
   <record>
     <name>http-alt</name>
@@ -74036,7 +74470,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>8068-8073</number>
+    <number>8068-8069</number>
+  </record>
+  <record date="2017-02-10">
+    <name>ucs-isc</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Oracle_Corp"/>
+    </assignee>
+    <description>Oracle Unified Communication Suite's Indexed Search Converter</description>
+    <number>8070</number>
+    <xref type="person" data="Bharathi_Sivaramakrishnan"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>8070</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>8071-8073</number>
   </record>
   <record date="2006-05">
     <name>gadugadu</name>
@@ -74054,7 +74507,28 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>8075-8079</number>
+    <number>8075-8076</number>
+  </record>
+  <record date="2017-02-24">
+    <name>mles</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Juhamatti_Kuusisaari"/>
+    </assignee>
+    <description>Mles is a client-server data distribution protocol 
+      targeted to serve as a lightweight and reliable distributed 
+      publish/subscribe database service.</description>
+    <number>8077</number>
+    <xref type="person" data="Juhamatti_Kuusisaari"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>8077</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>8078-8079</number>
   </record>
   <record>
     <name>http-alt</name>
@@ -74160,7 +74634,22 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>8089-8090</number>
+    <number>8089</number>
+  </record>
+  <record date="2017-02-08">
+    <name>opsmessaging</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="LAN-ACES_Inc"/>
+    </assignee>
+    <description>Vehicle to station messaging</description>
+    <number>8090</number>
+    <xref type="person" data="Robert_Ripberger"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>8090</number>
   </record>
   <record date="2009-11-25">
     <name>jamlink</name>
@@ -74854,7 +75343,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>8244-8275</number>
+    <number>8244-8269</number>
+  </record>
+  <record date="2017-01-26">
+    <name>robot-remote</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Robot_Framework_Foundation"/>
+    </assignee>
+    <description>Robot Framework Remote Library Interface</description>
+    <number>8270</number>
+    <xref type="person" data="Chris_Newman"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>8270</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>8271-8275</number>
   </record>
   <record date="2008-02-27">
     <name>pando-sec</name>
@@ -75334,7 +75842,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>8418-8441</number>
+    <number>8418-8422</number>
+  </record>
+  <record date="2017-03-30">
+    <name>aritts</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Aristech_GmbH"/>
+    </assignee>
+    <description>Aristech text-to-speech server</description>
+    <number>8423</number>
+    <xref type="person" data="Mirko_Hering"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>8423</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>8424-8441</number>
   </record>
   <record date="2007-05">
     <name>cybro-a-bus</name>
@@ -76131,8 +76658,42 @@ common service discovery mechanisms.</note>
     <number>8804</number>
   </record>
   <record>
+    <protocol>tcp</protocol>
+    <description>Reserved</description>
+    <number>8805</number>
+  </record>
+  <record date="2017-05-08">
+    <name>pfcp</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Kimmo_Kymalainen"/>
+    </assignee>
+    <description>Destination Port number for PFCP</description>
+    <number>8805</number>
+    <xref type="person" data="Kimmo_Kymalainen"/>
+  </record>
+  <record>
     <description>Unassigned</description>
-    <number>8805-8872</number>
+    <number>8806-8807</number>
+  </record>
+  <record>
+    <protocol>tcp</protocol>
+    <description>Reserved</description>
+    <number>8808</number>
+  </record>
+  <record date="2016-12-22">
+    <name>ssports-bcast</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Statsports_International"/>
+    </assignee>
+    <description>STATSports Broadcast Service</description>
+    <number>8808</number>
+    <xref type="person" data="Catalin_Caranfil"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>8809-8872</number>
   </record>
   <record date="2005-08">
     <name>dxspider</name>
@@ -76844,7 +77405,31 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>9052-9079</number>
+    <number>9052-9059</number>
+  </record>
+  <record date="2016-10-07">
+    <name>CardWeb-IO</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Virtual_Electric_Inc"/>
+    </assignee>
+    <description>CardWeb request-response I/O exchange</description>
+    <number>9060</number>
+    <xref type="person" data="David_Wyatt"/>
+  </record>
+  <record date="2016-10-07">
+    <name>CardWeb-RT</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Virtual_Electric_Inc"/>
+    </assignee>
+    <description>CardWeb realtime device data</description>
+    <number>9060</number>
+    <xref type="person" data="David_Wyatt"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>9061-9079</number>
   </record>
   <record date="2002-09">
     <name>glrpc</name>
@@ -79208,9 +79793,43 @@ common service discovery mechanisms.</note>
     <description>Reserved</description>
     <number>9978</number>
   </record>
+  <record date="2017-05-12">
+    <name>visweather</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Valley_Information_Systems_Inc"/>
+    </assignee>
+    <description>Valley Information Systems Weather station data</description>
+    <number>9979</number>
+    <xref type="person" data="Michael_Walsh_2"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>9979</number>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>9979-9986</number>
+    <number>9980</number>
+  </record>
+  <record date="2017-04-18">
+    <name>pumpkindb</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Eventsourcing_Inc"/>
+    </assignee>
+    <description>Event sourcing database engine with a built-in programming language</description>
+    <number>9981</number>
+    <xref type="person" data="Yurii_Rashkovskii"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>9981</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>9982-9986</number>
   </record>
   <record date="2006-08">
     <name>dsm-scm-target</name>
@@ -79555,7 +80174,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>10011-10049</number>
+    <number>10011-10019</number>
+  </record>
+  <record date="2017-03-28">
+    <name>abb-hw</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="ABB"/>
+    </assignee>
+    <description>Hardware configuration and maintenance</description>
+    <number>10020</number>
+    <xref type="person" data="Adam_Norén"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>10020</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>10021-10049</number>
   </record>
   <record date="2006-02">
     <name>zabbix-agent</name>
@@ -80010,9 +80648,24 @@ common service discovery mechanisms.</note>
     <description>Axis WIMP Port</description>
     <number>10260</number>
   </record>
+  <record date="2016-09-27">
+    <name>tile-ml</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="_1026_Labs"/>
+    </assignee>
+    <description>Tile remote machine learning</description>
+    <number>10261</number>
+    <xref type="person" data="Rob_Earhart"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>10261</number>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>10261-10287</number>
+    <number>10262-10287</number>
   </record>
   <record>
     <name>blocks</name>
@@ -82085,7 +82738,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>14415-14935</number>
+    <number>14415-14499</number>
+  </record>
+  <record date="2016-10-05">
+    <name>xpra</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Xpra"/>
+    </assignee>
+    <description>xpra network protocol</description>
+    <number>14500</number>
+    <xref type="person" data="Antoine_Martin"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>14500</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>14501-14935</number>
   </record>
   <record>
     <name>hde-lcesrvr-1</name>
@@ -83317,7 +83989,31 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>18636-18768</number>
+    <number>18636-18667</number>
+  </record>
+  <record date="2016-10-31">
+    <name>vdmmesh</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Van_Doren_MES"/>
+    </assignee>
+    <description>Manufacturing Execution Systems Mesh Communication</description>
+    <number>18668</number>
+    <xref type="person" data="Edwin_van_de_Burgt"/>
+  </record>
+  <record date="2016-10-31">
+    <name>vdmmesh-disc</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Van_Doren_MES"/>
+    </assignee>
+    <description>Manufacturing Execution Systems Mesh Communication</description>
+    <number>18668</number>
+    <xref type="person" data="Edwin_van_de_Burgt"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>18669-18768</number>
   </record>
   <record date="2002-07">
     <name>ique</name>
@@ -83465,7 +84161,31 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>19195-19282</number>
+    <number>19195-19219</number>
+  </record>
+  <record date="2016-11-10">
+    <name>cora</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Softvise_GmbH"/>
+    </assignee>
+    <description>Client Connection Management and Data Exchange Service</description>
+    <number>19220</number>
+    <xref type="person" data="Ronny_Krüger"/>
+  </record>
+  <record date="2016-11-10">
+    <name>cora-disc</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Softvise_GmbH"/>
+    </assignee>
+    <description>Discovery for Client Connection Management and Data Exchange Service</description>
+    <number>19220</number>
+    <xref type="person" data="Ronny_Krüger"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>19221-19282</number>
   </record>
   <record>
     <name>keysrvr</name>
@@ -84033,7 +84753,26 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>21011-21552</number>
+    <number>21011-21220</number>
+  </record>
+  <record date="2017-03-16">
+    <name>aigairserver</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="AIG_S.L."/>
+    </assignee>
+    <description>Services for Air Server</description>
+    <number>21221</number>
+    <xref type="person" data="Edelmiro_Gonzalez_Martinez"/>
+  </record>
+  <record>
+    <protocol>udp</protocol>
+    <description>Reserved</description>
+    <number>21221</number>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>21222-21552</number>
   </record>
   <record date="2011-05-02">
     <name>rdm-tfs</name>
@@ -86149,7 +86888,31 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>31000-31019</number>
+    <number>31000-31015</number>
+  </record>
+  <record date="2016-12-11">
+    <name>ka-sddp</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Kollective_Technology_Inc"/>
+    </assignee>
+    <description>Kollective Agent Secure Distributed Delivery Protocol</description>
+    <number>31016</number>
+    <xref type="person" data="John_Wainwright"/>
+  </record>
+  <record date="2016-12-11">
+    <name>ka-kdp</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Kollective_Technology_Inc"/>
+    </assignee>
+    <description>Kollective Agent Kollective Delivery Protocol</description>
+    <number>31016</number>
+    <xref type="person" data="John_Wainwright"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>31017-31019</number>
   </record>
   <record>
     <name>autotrac-acp</name>
@@ -86870,9 +87633,11 @@ common service discovery mechanisms.</note>
     <description>dhanalakshmi.org EDI Service</description>
     <number>34567</number>
   </record>
-  <record>
+  <record date="2016-10-26">
+    <name>edi_service</name>
     <protocol>udp</protocol>
-    <description>Reserved</description>
+    <xref type="person" data="Girish_Gopalakrishna"/>
+    <description>dhanalakshmi.org EDI Service</description>
     <number>34567</number>
   </record>
   <record>
@@ -87060,7 +87825,31 @@ common service discovery mechanisms.</note>
   </record>
   <record>
     <description>Unassigned</description>
-    <number>35007-35353</number>
+    <number>35007-35099</number>
+  </record>
+  <record date="2016-12-09">
+    <name>axio-disc</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Axiomatic_Technologies_Corporation"/>
+    </assignee>
+    <description>Axiomatic discovery protocol</description>
+    <number>35100</number>
+    <xref type="person" data="Oleksandr_Bogush"/>
+  </record>
+  <record date="2016-12-09">
+    <name>axio-disc</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Axiomatic_Technologies_Corporation"/>
+    </assignee>
+    <description>Axiomatic discovery protocol</description>
+    <number>35100</number>
+    <xref type="person" data="Oleksandr_Bogush"/>
+  </record>
+  <record>
+    <description>Unassigned</description>
+    <number>35101-35353</number>
   </record>
   <record date="2011-07-07">
     <name>kitim</name>
@@ -87586,7 +88375,7 @@ common service discovery mechanisms.</note>
     <description>Reserved</description>
     <number>40023</number>
   </record>
-  <record date="2015-12-02">
+  <record date="2015-12-02" updated="2017-05-12">
     <name>k-patentssensor</name>
     <protocol>udp</protocol>
     <assignee>
@@ -87594,7 +88383,7 @@ common service discovery mechanisms.</note>
     </assignee>
     <description>K-PatentsSensorInformation</description>
     <number>40023</number>
-    <xref type="person" data="Arttu_Leinonen"/>
+    <xref type="person" data="Saku_Lahteenmaki"/>
   </record>
   <record>
     <description>Unassigned</description>
@@ -88215,34 +89004,34 @@ common service discovery mechanisms.</note>
     <description>Unassigned</description>
     <number>44901-44999</number>
   </record>
-  <record date="2011-09-01">
+  <record date="2011-09-01" updated="2017-04-26">
     <name>asmp</name>
     <protocol>tcp</protocol>
     <assignee>
-      <xref type="person" data="Notable_Solutions_Inc"/>
+      <xref type="person" data="Nuance_Communications_Inc4"/>
     </assignee>
     <xref type="person" data="Andrew_Andrews"/>
-    <description>NSi AutoStore Status Monitoring Protocol data transfer</description>
+    <description>Nuance AutoStore Status Monitoring Protocol (data transfer)</description>
     <number>45000</number>
   </record> 
-  <record date="2011-09-01">
+  <record date="2011-09-01" updated="2017-04-26">
     <name>asmp-mon</name>
     <protocol>udp</protocol>
     <assignee>
-      <xref type="person" data="Notable_Solutions_Inc"/>
+      <xref type="person" data="Nuance_Communications_Inc4"/>
     </assignee>
     <xref type="person" data="Andrew_Andrews"/>
-    <description>NSi AutoStore Status Monitoring Protocol device monitoring</description>
+    <description>Nuance AutoStore Status Monitoring Protocol (device monitoring)</description>
     <number>45000</number>
   </record>
-  <record date="2011-09-01">
+  <record date="2011-09-01" updated="2017-04-26">
     <name>asmps</name>
     <protocol>tcp</protocol>
     <assignee>
-      <xref type="person" data="Notable_Solutions_Inc"/>
+      <xref type="person" data="Nuance_Communications_Inc4"/>
     </assignee>
     <xref type="person" data="Andrew_Andrews"/>
-    <description>NSi AutoStore Status Monitoring Protocol secure data transfer</description>
+    <description>Nuance AutoStore Status Monitoring Protocol (secure data transfer)</description>
     <number>45001</number>
   </record>
   <record>
@@ -88805,9 +89594,29 @@ common service discovery mechanisms.</note>
     <description>Reserved</description>
     <number>49000</number>
   </record>
+  <record date="2017-04-20">
+    <name>nusrp</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Nuance_Communications_Inc3"/>
+    </assignee>
+    <description>Nuance Unity Service Request Protocol</description>
+    <number>49001</number>
+    <xref type="person" data="Andrew_Andrews"/>
+  </record>
+  <record date="2017-04-20">
+    <name>nusdp-disc</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Nuance_Communications_Inc3"/>
+    </assignee>
+    <description>Nuance Unity Service Discovery Protocol</description>
+    <number>49001</number>
+    <xref type="person" data="Andrew_Andrews"/>
+  </record>
   <record>
     <description>Unassigned</description>
-    <number>49001-49150</number>
+    <number>49002-49150</number>
   </record>
   <record>
     <description>IANA Reserved</description>
@@ -89693,6 +90502,16 @@ common service discovery mechanisms.</note>
     <note>Defined TXT keys: txtvers, protovers</note>
     <xref type="person" data="Damien_Plisson"/>
   </record>
+  <record date="2017-04-17">
+    <name>autosendimages</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Canon_Inc_2"/>
+    </assignee>
+    <description>automatic sending Image data protocol</description>
+    <note/>
+    <xref type="person" data="Kazuo_Moritomo"/>
+  </record>
   <record date="2015-12-28">
     <name>autotargets-ap</name>
     <protocol>tcp</protocol>
@@ -89746,6 +90565,26 @@ common service discovery mechanisms.</note>
     <description>BabyPhone</description>
     <note>Defined TXT keys: None</note>
     <xref type="person" data="Johan_Kool"/>
+  </record>
+  <record date="2017-04-21">
+    <name>bandhelper-rc</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Arlo_Leach"/>
+    </assignee>
+    <description>Remote Control for BandHelper app</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Arlo_Leach"/>
+  </record>
+  <record date="2017-04-21">
+    <name>bandhelper-ss</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Arlo_Leach"/>
+    </assignee>
+    <description>Screen sharing for BandHelper app</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Arlo_Leach"/>
   </record>
   <record date="2013-11-05">
     <name>barroomcomedy</name>
@@ -90388,6 +91227,16 @@ fwver=&lt;firmware version&gt;</note>
     <description>DisConnect Peer to Peer Game Protocol</description>
     <note>Defined TXT keys: None</note>
     <xref type="person" data="Michael_S_Bogovich"/>
+  </record>
+  <record date="2017-03-14">
+    <name>displaysrc</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Wi-Fi_Alliance_3"/>
+    </assignee>
+    <description>Wi-Fi Alliance Display Source service</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Gaurav_Jain"/>
   </record>
   <record updated="2013-04-10">
     <name>dist-opencl</name>
@@ -91302,6 +92151,16 @@ There is no possibility of name conflict because (by definition) GUIDs are globa
     <note>Defined TXT keys: version=&lt;x.xx&gt;</note>
     <xref type="person" data="Thaddeus_Ternes"/>
   </record>
+  <record date="2016-12-12">
+    <name>ideaquest</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="IDEAQUEST_Inc."/>
+    </assignee>
+    <description>IDEAQUEST Safety Monitoring System</description>
+    <note>Defined TXT keys: none</note>
+    <xref type="person" data="Kimitaka_KAWAGUCHI"/>
+  </record>
   <record>
     <name>idsync</name>
     <description>SplashID Synchronization Service</description>
@@ -92091,6 +92950,16 @@ There is no possibility of name conflict because (by definition) GUIDs are globa
     <note>Defined TXT keys: txtvers and proprietary keys</note>
     <xref type="person" data="Nils_Langhammer"/>
   </record>
+  <record date="2017-01-12">
+    <name>mist</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Jon_Griffeth"/>
+    </assignee>
+    <description>A Medical Interoperability Service Type, used to identify medical devices providing network interfaces.</description>
+    <note>Defined TXT keys: https://www.praesentia.com/medkit/mist-service-type (dn dt md mf pr sn vn)</note>
+    <xref type="person" data="Jon_Griffeth"/>
+  </record>
   <record date="2015-11-18">
     <name>mmm</name>
     <protocol>tcp</protocol>
@@ -92356,6 +93225,16 @@ There is no possibility of name conflict because (by definition) GUIDs are globa
     <note>Defined TXT keys: Proprietary</note>
     <xref type="person" data="Claus_Broch"/>
   </record>
+  <record date="2017-04-18">
+    <name>ngr-keydist</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="nyantec"/>
+    </assignee>
+    <description>NGR Key Distribution</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Mikael_Voss"/>
+  </record>
   <record date="2011-10-24">
     <name>ni</name>
     <protocol>tcp</protocol>
@@ -92420,6 +93299,36 @@ There is no possibility of name conflict because (by definition) GUIDs are globa
     <description>Tenasys</description>
     <note>Defined TXT keys: None</note>
     <xref type="person" data="Carl_Ellis"/>
+  </record>
+  <record date="2017-04-20">
+    <name>nusdp</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Nuance_Communications_Inc"/>
+    </assignee>
+    <description>Nuance Unity Service Discovery Protocol</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Andrew_Andrews"/>
+  </record>
+  <record date="2017-02-09">
+    <name>oak</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Oak_Labs_Inc."/>
+    </assignee>
+    <description>Oak Device Services</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Flynn_Joffray"/>
+  </record>
+  <record date="2017-02-09">
+    <name>oak</name>
+    <protocol>udp</protocol>
+    <assignee>
+      <xref type="person" data="Oak_Labs_Inc."/>
+    </assignee>
+    <description>Oak Device Services</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Flynn_Joffray"/>
   </record>
   <record>
     <name>obf</name>
@@ -93207,6 +94116,26 @@ Profiling and performance analysis protocol for Shark 4.0 and BigTop.</note>
     <note>Defined TXT keys: txtvers=1</note>
     <xref type="person" data="Don_Woodward"/>
   </record>
+  <record date="2017-02-01">
+    <name>roomcast-capi</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Colin_Corby"/>
+    </assignee>
+    <description>RoomCast Control Protocol</description>
+    <note>Defined TXT keys: protocolVersion, uuid</note>
+    <xref type="person" data="Colin_Corby"/>
+  </record>
+  <record date="2017-02-01">
+    <name>roomcast-mapi</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Colin_Corby"/>
+    </assignee>
+    <description>RoomCast Management Protocol</description>
+    <note>Defined TXT keys: protocolVersion, uuid</note>
+    <xref type="person" data="Colin_Corby"/>
+  </record>
   <record>
     <name>rql</name>
     <description>RemoteQuickLaunch</description>
@@ -93475,6 +94404,26 @@ Profiling and performance analysis protocol for Shark 4.0 and BigTop.</note>
     <description>Session File Sharing</description>
     <note>Defined TXT keys: Text keys are the file extensions of any file the user plans to share, i.e. pdf, doc, mp3.</note>
     <xref type="person" data="Anthony_Williams"/>
+  </record>
+  <record date="2017-04-21">
+    <name>setlistmaker-rc</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Arlo_Leach"/>
+    </assignee>
+    <description>Remote Control for Set List Maker app</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Arlo_Leach"/>
+  </record>
+  <record date="2017-04-21">
+    <name>setlistmaker-ss</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Arlo_Leach"/>
+    </assignee>
+    <description>Screen sharing for Set List Maker app</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Arlo_Leach"/>
   </record>
   <record>
     <name>sftp-ssh</name>
@@ -94426,6 +95375,54 @@ cport= the port for the content HTTP server
     <note>Defined TXT keys: URL=&lt;URL that is advertised&gt;, name=&lt;Name of the bookmark&gt;</note>
     <xref type="person" data="Sven_S_Porst"/>
   </record>
+  <record date="2017-01-12">
+    <name>usp-agt-coap</name>
+    <protocol>udp</protocol>
+    <description>USP discovery</description>
+    <note>Defined TXT keys: see www.broadband-forum.org/assignments</note>
+    <xref type="person" data="Broadband_Forum"/>
+    <xref type="uri" data="http://www.broadband-forum.org/assignments"/>
+  </record>
+  <record date="2017-01-12">
+    <name>usp-agt-http</name>
+    <protocol>tcp</protocol>
+    <description>USP discovery</description>
+    <note>Defined TXT keys: see www.broadband-forum.org/assignments</note>
+    <xref type="person" data="Broadband_Forum"/>
+    <xref type="uri" data="http://www.broadband-forum.org/assignments"/>
+  </record>
+  <record date="2017-01-12">
+    <name>usp-agt-stomp</name>
+    <protocol>tcp</protocol>
+    <description>USP discovery</description>
+    <note>Defined TXT keys: see www.broadband-forum.org/assignments</note>
+    <xref type="person" data="Broadband_Forum"/>
+    <xref type="uri" data="http://www.broadband-forum.org/assignments"/>
+  </record>
+  <record date="2017-01-12">
+    <name>usp-ctr-coap</name>
+    <protocol>udp</protocol>
+    <description>USP discovery</description>
+    <note>Defined TXT keys: see www.broadband-forum.org/assignments</note>
+    <xref type="person" data="Broadband_Forum"/>
+    <xref type="uri" data="http://www.broadband-forum.org/assignments"/>
+  </record>
+  <record date="2017-01-12">
+    <name>usp-ctr-http</name>
+    <protocol>tcp</protocol>
+    <description>USP discovery</description>
+    <note>Defined TXT keys: see www.broadband-forum.org/assignments</note>
+    <xref type="person" data="Broadband_Forum"/>
+    <xref type="uri" data="http://www.broadband-forum.org/assignments"/>
+  </record>
+  <record date="2017-01-12">
+    <name>usp-ctr-stomp</name>
+    <protocol>tcp</protocol>
+    <description>USP discovery</description>
+    <note>Defined TXT keys: see www.broadband-forum.org/assignments</note>
+    <xref type="person" data="Broadband_Forum"/>
+    <xref type="uri" data="http://www.broadband-forum.org/assignments"/>
+  </record>
   <record>
     <name>uswi</name>
     <description>Universal Switching Corporation products</description>
@@ -94613,6 +95610,17 @@ cport= the port for the content HTTP server
       loc=&lt;location&gt;</note>
     <xref type="person" data="Cameron_Colpitts"/>
   </record>
+  <record date="2016-12-23">
+    <name>wifile</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Artyom_Nikolaev"/>
+    </assignee>
+    <description>System for transferring files between 
+      mobile device and computer in a local network</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Artyom_Nikolaev"/>
+  </record>
   <record>
     <name>witap</name>
     <description>WiTap Sample Game Protocol</description>
@@ -94648,6 +95656,26 @@ cport= the port for the content HTTP server
     <description>Novell collaboration workgroup</description>
     <note>Defined TXT keys: version=? description=?</note>
     <xref type="person" data="Brady_Anderson"/>
+  </record>
+  <record date="2017-03-17">
+    <name>wpl-ers-http</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="World_Programming_Limited"/>
+    </assignee>
+    <description>World Programming repository server</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Thomas_Quarendon"/>
+  </record>
+  <record date="2017-03-17">
+    <name>wpl-ers-zmq</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="World_Programming_Limited"/>
+    </assignee>
+    <description>World Programming repository server</description>
+    <note>Defined TXT keys: None</note>
+    <xref type="person" data="Thomas_Quarendon"/>
   </record>
   <record>
     <name>writietalkie</name>
@@ -94871,6 +95899,11 @@ cport= the port for the content HTTP server
 configured experiments; they MUST NOT be shipped as defaults in
 implementations.  See RFC 3692 for details.</footnote>
   <people>
+    <person id="_1026_Labs">
+      <org>1026 Labs</org>
+      <uri>mailto:contact&amp;1026labs.com</uri>
+      <updated>2016-09-27</updated>
+    </person>
     <person id="Actifio">
       <org>Actifio</org>
       <uri>mailto:madhav.mutalik&amp;actifio.com</uri>
@@ -94953,6 +95986,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Aaron Stein</name>
       <uri>mailto:aaron.stein&amp;ca.com</uri>
     </person>
+    <person id="ABB">
+      <org>ABB</org>
+      <uri>mailto:adam.noren&amp;se.abb.com</uri>
+      <updated>2017-03-28</updated>
+    </person>
     <person id="Abdullah_Obeid">
       <name>Abdullah Obeid</name>
       <uri>mailto:a.obeid&amp;contamac.nl</uri>
@@ -95026,6 +96064,12 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Adam_Maxwell">
       <name>Adam Maxwell</name>
       <uri>mailto:amaxwell&amp;mac.com</uri>
+    </person>
+    <person id="Adam_Norén">
+      <name>Adam Norén</name>
+      <org>ABB</org>
+      <uri>mailto:adam.noren&amp;se.abb.com</uri>
+      <updated>2017-03-28</updated>
     </person>
     <person id="Adam_Robinson">
       <name>Adam Robinson</name>
@@ -95119,6 +96163,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Ahti Heinla</name>
       <uri>mailto:ahti&amp;ahti.bluemoon.ee</uri>
       <updated>2002-06</updated>
+    </person>
+    <person id="AIG_S.L.">
+      <org>AIG S.L.</org>
+      <uri>mailto:pitin&amp;aigclassic.com</uri>
+      <updated>2017-03-16</updated>
     </person>
     <person id="Aivi_Lie">
       <name>Aivi Lie</name>
@@ -95579,6 +96628,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Allen Wei</name>
       <uri>mailto:Allen_Wei&amp;arborsoft.com</uri>
     </person>
+    <person id="Allied_Electronics">
+      <org>Allied Electronics</org>
+      <uri>mailto:Rob&amp;AlliedElectronics.com</uri>
+      <updated>2016-11-29</updated>
+    </person>
     <person id="Allison_Carleton">
       <name>Allison Carleton</name>
       <uri>mailto:acarleto&amp;naper1.napervilleil.ncr.com</uri>
@@ -95930,8 +96984,8 @@ implementations.  See RFC 3692 for details.</footnote>
     </person>
     <person id="Andrew_Andrews">
       <name>Andrew Andrews</name>
-      <uri>mailto:Andrew.Andrews&amp;nsius.com</uri>
-      <updated>2011-09-01</updated>
+      <uri>mailto:Andrew.Andrews&amp;Nuance.com</uri>
+      <updated>2017-04-26</updated>
     </person>
     <person id="Andrew_Beekhof ">
       <name>Andrew Beekhof </name>
@@ -96274,6 +97328,7 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Antoine_Martin">
       <name>Antoine Martin</name>
       <uri>mailto:antoine&amp;nagafix.co.uk</uri>
+      <updated>2016-10-05</updated>
     </person>
     <person id="Anton_Kucer">
       <name>Anton Kucer</name>
@@ -96384,10 +97439,20 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Ari Valtanen</name>
       <uri>mailto:ari.valtanen&amp;solidtech.com</uri>
     </person>
+    <person id="Aristech_GmbH">
+      <org>Aristech GmbH</org>
+      <uri>mailto:mirko.hering&amp;aristech.de</uri>
+      <updated>2017-03-30</updated>
+    </person>
     <person id="Arjen_Lentz">
       <name>Arjen Lentz</name>
       <uri>mailto:arjen&amp;mysql.com</uri>
       <updated>2004-11</updated>
+    </person>
+    <person id="Arlo_Leach">
+      <name>Arlo Leach</name>
+      <uri>mailto:arlo&amp;arlomedia.com</uri>
+      <updated>2017-04-21</updated>
     </person>
     <person id="Arman_Bedonian">
       <name>Arman Bedonian</name>
@@ -96503,6 +97568,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Arttu Leinonen</name>
       <uri>mailto:arttu.leinonen&amp;kpatents.com</uri>
       <updated>2015-12-02</updated>
+    </person>
+    <person id="Artyom_Nikolaev">
+      <name>Artyom Nikolaev</name>
+      <uri>mailto:support&amp;wifile.info</uri>
+      <updated>2016-12-23</updated>
     </person>
     <person id="Arvel_Hathcock">
       <name>Arvel Hathcock</name>
@@ -96668,6 +97738,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Axel_Kern">
       <name>Axel Kern</name>
       <uri>mailto:axel.kern&amp;betasystems.com</uri>
+    </person>
+    <person id="Axiomatic_Technologies_Corporation">
+      <org>Axiomatic Technologies Corporation</org>
+      <uri>mailto:obogush&amp;axiomatic.com</uri>
+      <updated>2016-12-09</updated>
     </person>
     <person id="Ayoda_GmbH">
       <name>Ayoda GmbH</name>
@@ -96940,6 +98015,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>IETF BFD Working Group Chairs</name>
       <uri>mailto:bfd-chairs&amp;tools.ietf.org</uri>
       <updated>2014-01-09</updated>
+    </person>
+    <person id="Bharathi_Sivaramakrishnan">
+      <name>Bharathi Sivaramakrishnan</name>
+      <uri>mailto:bharathi.sivaramakrishnan&amp;oracle.com</uri>
+      <updated>2017-02-10</updated>
     </person>
     <person id="Bianling_Zhang">
       <name>Bianling Zhang</name>
@@ -97666,6 +98746,16 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:bgagne&amp;trigence.com</uri>
       <updated>2006-08</updated>
     </person>
+    <person id="Broadband_Forum">
+      <name>Broadband Forum</name>
+      <uri>mailto:info&amp;broadband-forum.org</uri>
+      <updated>2017-01-12</updated>
+    </person>
+    <person id="Broadband_Forum_2">
+      <org>Broadband Forum</org>
+      <uri>mailto:help&amp;broadband-forum.org</uri>
+      <updated>2017-02-22</updated>
+    </person>
     <person id="Brocade_Communications_Systems">
       <name>Brocade Communications Systems</name>
       <uri>mailto:ncarter&amp;brocade.com</uri>
@@ -97902,7 +98992,7 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Canon_Inc_2">
       <org>Canon Inc</org>
       <uri>mailto:fujii.ken-ichi149&amp;canon.co.jp</uri>
-      <updated>2013-03-28</updated>
+      <updated>2017-04-17</updated>
     </person>
     <person id="Canon_Inc_3">
       <org>Canon Inc.</org>
@@ -98043,6 +99133,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>Teledyne BlueView, Inc.</org>
       <uri>mailto:czimmermann&amp;teledyne.com</uri>
       <updated>2012-09-19</updated>
+    </person>
+    <person id="Catalin_Caranfil">
+      <name>Catalin Caranfil</name>
+      <uri>mailto:c.caranfil&amp;statsports.com</uri>
+      <updated>2016-12-22</updated>
     </person>
     <person id="Catalogic_Software_Inc">
       <org>Catalogic Software, Inc.</org>
@@ -98384,7 +99479,7 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Chris_Newman">
       <name>Chris Newman</name>
       <uri>mailto:chris.newman&amp;oracle.com</uri>
-      <updated>2016-06-28</updated>
+      <updated>2017-01-26</updated>
     </person>
     <person id="Chris_Nigbur">
       <name>Chris Nigbur</name>
@@ -98973,6 +100068,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Colin Caughie</name>
       <uri>mailto:cfc&amp;indigo-avs.com</uri>
     </person>
+    <person id="Colin_Corby">
+      <name>Colin Corby</name>
+      <uri>mailto:colin.corby&amp;teleadapt.com</uri>
+      <updated>2017-02-01</updated>
+    </person>
     <person id="Colin_Goldstein">
       <name>Colin Goldstein</name>
       <uri>mailto:Colin&amp;kana.com</uri>
@@ -99232,6 +100332,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Curtiss Howard</name>
       <uri>mailto:cjhoward&amp;unity.ncsu.edu</uri>
       <updated>2004-11</updated>
+    </person>
+    <person id="Curtiss-Wright_Corporation">
+      <org>Curtiss-Wright Corporation</org>
+      <uri>mailto:rammon&amp;curtisswright.com</uri>
+      <updated>2016-12-14</updated>
     </person>
     <person id="CX5_SOFTWARE">
       <org>CX5 SOFTWARE</org>
@@ -99588,6 +100693,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Darrell Schiebel</name>
       <uri>mailto:dschieb&amp;cv.nrao.edu</uri>
     </person>
+    <person id="Darin_Smith">
+      <name>Darin Smith</name>
+      <uri>mailto:darin.smith&amp;harman.com</uri>
+      <updated>2017-02-16</updated>
+    </person>
     <person id="Darrin_Smart">
       <name>Darrin Smart</name>
       <uri>mailto:dns-sd&amp;filmlight.ltd.uk</uri>
@@ -99762,11 +100872,6 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Dave_Porter">
       <name>Dave Porter</name>
       <uri>mailto:porter&amp;mango.com</uri>
-    </person>
-    <person id="Dave_Reiland">
-      <name>Dave Reiland</name>
-      <uri>mailto:dave.reiland&amp;netex.com</uri>
-      <updated>2003-11</updated>
     </person>
     <person id="Dave_Robin">
       <name>Dave Robin</name>
@@ -100059,6 +101164,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="David_Greer">
       <name>David Greer</name>
       <uri>mailto:david_greer&amp;robelle.com</uri>
+    </person>
+    <person id="David_Gregorczyk">
+      <name>David Gregorczyk</name>
+      <uri>mailto:david.gregorczyk&amp;draeger.com</uri>
+      <updated>2017-03-02</updated>
     </person>
     <person id="David_Gutierrez">
       <name>David Gutiérrez</name>
@@ -100427,6 +101537,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="David_Wooden">
       <name>David Wooden</name>
       <uri>mailto:dwooden&amp;wizdom.com</uri>
+    </person>
+    <person id="David_Wyatt">
+      <name>David Wyatt</name>
+      <uri>mailto:dwyatt&amp;vei.org</uri>
+      <updated>2016-10-07</updated>
     </person>
     <person id="David_Yon">
       <name>David Yon</name>
@@ -100825,10 +101940,20 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:pulse.cc&amp;mail.ru</uri>
       <updated>2006-02</updated>
     </person>
+    <person id="Dmitry_Odintsov">
+      <name>Dmitry Odintsov</name>
+      <uri>mailto:dimodin&amp;trueconf.com</uri>
+      <updated>2017-05-12</updated>
+    </person>
     <person id="DOCKER">
       <org>DOCKER</org>
       <uri>mailto:iana&amp;cdl.asgaard.org</uri>
       <updated>2014-04-17</updated>
+    </person>
+    <person id="Docker_Inc">
+      <org>Docker, Inc.</org>
+      <uri>mailto:info&amp;docker.com</uri>
+      <updated>2016-12-23</updated>
     </person>
     <person id="Dolores_Scott">
       <name>Dolores Scott</name>
@@ -101258,6 +102383,12 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Ed Vincent</name>
       <uri>mailto:edv&amp;concomp.com</uri>
     </person>
+    <person id="Edelmiro_Gonzalez_Martinez">
+      <name>Edelmiro_Gonzalez_Martinez</name>
+      <org>AIG S.L.</org>
+      <uri>mailto:pitin&amp;aigclassic.com</uri>
+      <updated>2017-03-16</updated>
+    </person>
     <person id="Eddie_Borjas">
       <name>Eddie Borjas</name>
       <org>Beats Electronics LLC.</org>
@@ -101332,6 +102463,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Edward_Yim">
       <name>Edward Yim</name>
       <uri>mailto:eyim&amp;hpmfas4.cup.hp.com</uri>
+    </person>
+    <person id="Edwin_van_de_Burgt">
+      <name>Edwin van de Burgt</name>
+      <uri>mailto:edwin.van.de.burgt&amp;vandoren.nl</uri>
+      <updated>2016-10-31</updated>
     </person>
     <person id="EEBus_Initiative">
       <org>EEBus Initiative</org>
@@ -101817,6 +102953,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:evan&amp;robix.com</uri>
       <updated>2005-11</updated>
     </person>
+    <person id="Eventsourcing_Inc">
+      <org>Eventsourcing, Inc.</org>
+      <uri>mailto:accounts&amp;eventsourcing.com</uri>
+      <updated>2017-04-18</updated>
+    </person>
     <person id="Evgeniy_Filatov">
       <name>Evgeniy Filatov</name>
       <uri>mailto:evgeniyfilatov&amp;yandex.ru</uri>
@@ -101962,6 +103103,12 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Florian Weimer</name>
       <uri>mailto:fweimer&amp;redhat.com</uri>
       <updated>2013-03-12</updated>
+    </person>
+    <person id="Flynn_Joffray">
+      <name>Flynn Joffray</name>
+      <org>Oak Labs, Inc.</org>
+      <uri>mailto:flynn&amp;oaklabs.is</uri>
+      <updated>2017-02-09</updated>
     </person>
     <person id="fnxsoftware.com">
       <org>fnxsoftware.com</org>
@@ -102447,6 +103594,12 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:admin&amp;conceptworld.com</uri>
       <updated>2013-08-20</updated>
     </person>
+    <person id="Gaurav_Jain">
+      <name>Gaurav Jain</name>
+      <org>Wi-Fi Alliance</org>
+      <uri>mailto:gjain&amp;wifi.org</uri>
+      <updated>2017-03-14</updated>
+    </person>
     <person id="Gavin_Hutchinson">
       <name>Gavin Hutchinson</name>
       <uri>mailto:gavinh&amp;visionlogistics.com</uri>
@@ -102558,8 +103711,8 @@ implementations.  See RFC 3692 for details.</footnote>
     </person>
     <person id="George_Hwa">
       <name>George Hwa</name>
-      <uri>mailto:ghwa&amp;luminescent.com</uri>
-      <updated>2007-03</updated>
+      <uri>mailto:george.hwa&amp;kla-tencor.com</uri>
+      <updated>2016-10-17</updated>
     </person>
     <person id="George_Kajos">
       <name>George Kajos</name>
@@ -102736,7 +103889,7 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Girish_Gopalakrishna">
       <name>Girish Gopalakrishnan</name>
       <uri>mailto:girish&amp;shankar-software.org</uri>
-      <updated>2010-04-20</updated>
+      <updated>2016-10-26</updated>
     </person>
     <person id="Gita_Murthy">
       <name>Gita Murthy</name>
@@ -103058,6 +104211,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Gregg Welker</name>
       <uri>mailto:greggw&amp;zmi.com</uri>
     </person>
+    <person id="Gregor_Jehle">
+      <name>Gregor Jehle</name>
+      <uri>mailto:hadez&amp;p3ki.com</uri>
+      <updated>2017-01-12</updated>
+    </person>
     <person id="Gregor_Schmid">
       <name>Gregor Schmid</name>
       <uri>mailto:gs&amp;qfs.de</uri>
@@ -103267,6 +104425,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Harish Kuttan</name>
       <uri>mailto:harish.k&amp;hp.com</uri>
       <updated>2010-03-22</updated>
+    </person>
+    <person id="Harman_International_Industries_Inc">
+      <org>Harman International Industries Inc.</org>
+      <uri>darin.smith@harman.com</uri>
+      <updated>2017-02-16</updated>
     </person>
     <person id="Harold_Froehling">
       <name>Harold Froehling</name>
@@ -103887,6 +105050,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:jafari&amp;pdcwa.com.au</uri>
       <updated>2012-12-21</updated>
     </person>
+    <person id="IDEAQUEST_Inc.">
+      <org>IDEAQUEST Inc.</org>
+      <uri>mailto:engineering&amp;ideaquest4u.com</uri>
+      <updated>2016-12-12</updated>
+    </person>
     <person id="Ido_Ben_David">
       <name>Ido Ben-David</name>
       <uri>mailto:dgntcom&amp;netvision.net.il</uri>
@@ -104039,6 +105207,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>Intel</org>
       <uri>mailto:joshua.boelter&amp;intel.com</uri>
       <updated>2011-10-18</updated>
+    </person>
+    <person id="IntelliAdmin_LLC">
+      <org>IntelliAdmin, LLC</org>
+      <uri>mailto:support&amp;intelliadmin.com</uri>
+      <updated>2016-11-18</updated>
     </person>
     <person id="IOSPIRIT_GmbH">
       <org>IOSPIRIT GmbH</org>
@@ -105947,6 +107120,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>John Trudeau</name>
       <uri>mailto:jtrudeau&amp;cup.hp.com</uri>
     </person>
+    <person id="John_Wainwright">
+      <name>John Wainwright</name>
+      <uri>mailto:jwainwright&amp;kollective.com</uri>
+      <updated>2016-12-11</updated>
+    </person>
     <person id="John_Wallace">
       <name>John Wallace</name>
       <uri>mailto:john&amp;nowsoftware.com</uri>
@@ -106007,6 +107185,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Jon Bolen</name>
       <uri>mailto:jon.bolen&amp;westec.net</uri>
       <updated>2009-03-18</updated>
+    </person>
+    <person id="Jon_Griffeth">
+      <name>Jon Griffeth</name>
+      <uri>mailto:griffeth&amp;praesentia.com</uri>
+      <updated>2017-01-12</updated>
     </person>
     <person id="Jon_Ingi_Ingimundars">
       <name>Jon Ingi Ingimundarson</name>
@@ -106361,6 +107544,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Jugaari</name>
       <uri>mailto:support&amp;jugaari.com</uri>
     </person>
+    <person id="Juhamatti_Kuusisaari">
+      <name>Juhamatti Kuusisaari</name>
+      <uri>mailto:juhamatti.kuusisaari&amp;mles.io</uri>
+      <updated>2017-02-24</updated>
+    </person>
     <person id="Juho_Herttua">
       <name>Juho Vähä-Herttua</name>
       <uri>mailto:juhovh&amp;iki.fi</uri>
@@ -106378,7 +107566,7 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Julian Simpson</name>
       <org>Neo Technology, Inc</org>
       <uri>mailto:julian.simpson&amp;neotechnology.com</uri>
-      <updated>2013-02-08</updated>
+      <updated>2016-09-29</updated>
     </person>
     <person id="Julian_Smith">
       <name>Julian Smith</name>
@@ -106630,7 +107818,7 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Kazuo Moritomo</name>
       <org>Canon Inc</org>
       <uri>mailto:moritomo.kazuo&amp;canon.co.jp</uri>
-      <updated>2013-03-28</updated>
+      <updated>2017-04-17</updated>
     </person>
     <person id="Kazuya_Ogata">
       <name>Kazuya Ogata</name>
@@ -107100,10 +108288,16 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Kimberly Gibbs</name>
       <uri>mailto:kimgib&amp;ccgate-ut.axent.com</uri>
     </person>
+    <person id="Kimitaka_KAWAGUCHI">
+      <name>Kimitaka KAWAGUCHI</name>
+      <org>IDEAQUEST Inc.</org>
+      <uri>mailto:engineering&amp;ideaquest4u.com</uri>
+      <updated>2016-12-12</updated>
+    </person>
     <person id="Kimmo_Kymalainen">
       <name>Kimmo Kymalainen</name>
       <uri>mailto:kimmo.kymalainen&amp;etsi.org</uri>
-      <updated>2010-06-04</updated>
+      <updated>2017-05-08</updated>
     </person>
     <person id="Kin_Chan">
       <name>Kin Chan</name>
@@ -107156,6 +108350,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Kit Sturgeon</name>
       <uri>mailto:Kit&amp;remotecontrolsextoys.com</uri>
     </person>
+    <person id="KLA_Tencor">
+      <org>KLA Tencor/RAPID</org>
+      <uri>mailto:george.hwa&amp;kla-tencor.com</uri>
+      <updated>2016-10-17</updated>
+    </person>
     <person id="Klas_Malmborg">
       <name>Klas Malmborg</name>
       <org>FLIR Systems AB</org>
@@ -107190,6 +108389,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Koich_Nakamura">
       <name>Koich Nakamura</name>
       <uri>mailto:naka&amp;case.nm.fujitsu.co.jp</uri>
+    </person>
+    <person id="Kollective_Technology_Inc">
+      <org>Kollective Technology Inc.</org>
+      <uri>mailto:info&amp;kollective.com</uri>
+      <updated>2016-12-11</updated>
     </person>
     <person id="Konstantin_Iavid">
       <name>Konstantin Iavid</name>
@@ -107290,6 +108494,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>L-ACOUSTICS</org>
       <uri>mailto:christophe.pignon&amp;l-acoustics.com</uri>
       <updated>2012-08-13</updated>
+    </person>
+    <person id="LAN-ACES">
+      <org>LAN-ACES</org>
+      <uri>mailto:rip&amp;lan-aces.com</uri>
+      <updated>2017-02-08</updated>
     </person>
     <person id="LJK">
       <org>LJK Software, Cambridge, Massachusetts</org>
@@ -107645,6 +108854,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>ZigBee Alliance's Network Device working group</org>
       <uri>mailto:ljm&amp;exegin.com</uri>
       <updated>2013-05-28</updated>
+    </person>
+    <person id="Lev_Yakupov">
+      <name>Lev Yakupov</name>
+      <uri>mailto:lyakupov&amp;trueconf.com</uri>
+      <updated>2017-05-12</updated>
     </person>
     <person id="Lewis_Donzis">
       <name>Lewis Donzis</name>
@@ -109211,6 +110425,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Menno Zweistra</name>
       <uri>mailto:m.zweistra&amp;metatude.com</uri>
     </person>
+    <person id="MERG">
+      <org>MERG</org>
+      <uri>mailto:merg&amp;upsys.co.uk</uri>
+      <updated>2017-01-03</updated>
+    </person>
     <person id="Metod_Celestina">
       <name>Metod Celestina</name>
       <org>IMS merilni sistemi d.o.o.</org>
@@ -109633,6 +110852,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Michael Walsh</name>
       <uri>mailto:mww&amp;warwick.net</uri>
     </person>
+    <person id="Michael_Walsh_2">
+      <name>Michael Walsh</name>
+      <uri>mailto:michael.walsh&amp;valleyinfosys.com</uri>
+      <updated>2017-05-12</updated>
+    </person>
     <person id="Michael_Werski">
       <name>Michael Werski</name>
       <uri>mailto:michael.werski&amp;azeti.net</uri>
@@ -109897,6 +111121,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Mike Goddard</name>
       <uri>mailto:mike.goddard&amp;ardent.com.au</uri>
     </person>
+    <person id="Mike_Goelzer">
+      <name>Mike Goelzer</name>
+      <uri>mailto:mgoelzer&amp;docker.com</uri>
+      <updated>2016-12-23</updated>
+    </person>
     <person id="Mike_Gossett">
       <name>Mike Gossett</name>
       <uri>mailto:mike&amp;omnibond.com</uri>
@@ -110058,7 +111287,7 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Mikael_Voss">
       <name>Mikael Voss</name>
       <uri>mailto:mvs&amp;nyantec.com</uri>
-      <updated>2016-09-13</updated>
+      <updated>2017-04-18</updated>
     </person>
     <person id="Milton_E_Sagen">
       <name>Milton E. Sagen</name>
@@ -110112,6 +111341,12 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Miriam_Wohlgelernter">
       <name>Miriam Wohlgelernter</name>
       <uri>mailto:miriamw&amp;adirtech.com</uri>
+    </person>
+    <person id="Mirko_Hering">
+      <name>Mirko Hering</name>
+      <org>Aristech GmbH</org>
+      <uri>mailto:mirko.hering&amp;aristech.de</uri>
+      <updated>2017-03-30</updated>
     </person>
     <person id="Mitch_Kaufman">
       <name>Mitch Kaufman</name>
@@ -110175,6 +111410,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Moises_E_Hernandez">
       <name>Moises E. Hernandez</name>
       <uri>mailto:moises&amp;accugraph.com</uri>
+    </person>
+    <person id="Monette_Maano">
+      <name>Monette Maano</name>
+      <uri>mailto:mmaano&amp;openit.com</uri>
+      <updated>2016-11-17</updated>
     </person>
     <person id="Montgomery_Zukowski">
       <name>Montgomery Zukowski</name>
@@ -110309,6 +111549,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Nancy_Davoust">
       <name>Nancy Davoust</name>
       <uri>mailto:n.davoust&amp;cablelabs.com</uri>
+    </person>
+    <person id="Nancy_Golio">
+      <name>Nancy Golio</name>
+      <uri>mailto:nancy.golio&amp;netex.com</uri>
+      <updated>2017-01-25</updated>
     </person>
     <person id="Nand_Kumar">
       <name>Nand Kumar</name>
@@ -110456,7 +111701,7 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Neo_Technology_Inc">
       <org>Neo Technology, Inc</org>
       <uri>mailto:admins&amp;neotechnology.com</uri>
-      <updated>2013-02-08</updated>
+      <updated>2016-09-29</updated>
     </person>
     <person id="Nest_Labs_Inc">
       <org>Nest Labs, Inc.</org>
@@ -110486,6 +111731,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>netperf.org </org>
       <uri>mailto:netperf-feedback&amp;netperf.org</uri>
       <updated>2013-04-05</updated>
+    </person>
+    <person id="Network_Executive_Software_Inc">
+      <org>Network Executive Software, Inc.</org>
+      <uri>mailto:support&amp;netex.com</uri>
+      <updated>2017-01-25</updated>
     </person>
     <person id="Nevil_Brownlee">
       <name>Nevil Brownlee</name>
@@ -110784,11 +112034,6 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:northon.rodrigues&amp;thomson.net</uri>
       <updated>2004-02</updated>
     </person>
-    <person id="Notable_Solutions_Inc">
-      <org>Notable Solutions, Inc.</org>
-      <uri>mailto:dev&amp;nsius.com</uri>
-      <updated>2011-09-01</updated>
-    </person>
     <person id="NovaWiz_LTD">
       <name>NovaWiz LTD</name>
       <uri>mailto:Moshe&amp;novawiz.com</uri>
@@ -110803,6 +112048,16 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:NOD_SolutionsArchitecture&amp;nuance.com</uri>
       <updated>2012-10-05</updated>
     </person>
+    <person id="Nuance_Communications_Inc3">
+      <org>Nuance Communications, Inc.</org>
+      <uri>mailto:Andrew.Andrews&amp;Nuance.com</uri>
+      <updated>2017-04-20</updated>
+    </person>
+    <person id="Nuance_Communications_Inc4">
+      <org>Nuance Communications, Inc.</org>
+      <uri>mailto:dev&amp;nsius.com</uri>
+      <updated>2017-04-26</updated>
+    </person>
     <person id="NVM_Express_Workgroup">
       <name>NVM Express Workgroup</name>
       <uri>mailto:membership&amp;nvmexpress.org</uri>
@@ -110811,7 +112066,12 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="nyantec">
       <org>nyantec</org>
       <uri>mailto:info&amp;nyantec.com</uri>
-      <updated>2016-09-13</updated>
+      <updated>2017-04-18</updated>
+    </person>
+    <person id="Oak_Labs_Inc.">
+      <org>Oak Labs, Inc.</org>
+      <uri>mailto:ops&amp;oaklabs.is</uri>
+      <updated>2017-02-09</updated>
     </person>
     <person id="OASIS">
       <org>OASIS</org>
@@ -110886,6 +112146,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Oleg Noskov</name>
       <uri>mailto:olegn&amp;corelcomputer.com</uri>
     </person>
+    <person id="Oleksandr_Bogush">
+      <name>Oleksandr_Bogush</name>
+      <uri>mailto:obogush&amp;axiomatic.com</uri>
+      <updated>2016-12-09</updated>
+    </person>
     <person id="Oleksandr_Zakharchuk">
       <name>Oleksandr Zakharchuk</name>
       <uri>mailto:zakharchuk&amp;dialogtech.com</uri>
@@ -110944,6 +112209,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="One_Laptop_per_Child">
       <org>One Laptop per Child/Collabora Ltd.</org>
       <uri>mailto:devel&amp;lists.laptop.org</uri>
+    </person>
+    <person id="OpeniT_Inc">
+      <org>OpeniT Inc.</org>
+      <uri>mailto:mmaano&amp;openit.com</uri>
+      <updated>2016-11-17</updated>
     </person>
     <person id="Open_Lighting_Project">
       <org>Open Lighting Project</org>
@@ -111039,6 +112309,12 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:shawn.emery&amp;oracle.com</uri>
       <updated>2016-09-15</updated>
     </person>
+    <person id="Oracle_Corp">
+      <org>Oracle Corp</org>
+      <uri>mailto:bharathi.sivaramakrishnan&amp;oracle.com</uri>
+      <uri>mailto:chris.newman&amp;oracle.com</uri>
+      <updated>2017-02-10</updated>
+    </person>
     <person id="Oran_Davis">
       <name>Oran Davis</name>
       <uri>mailto:oran&amp;8x8.com</uri>
@@ -111096,6 +112372,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>Ozate Inc.</org>
       <uri>mailto:joe&amp;ozate.com</uri>
       <updated>2011-10-12</updated>
+    </person>
+    <person id="P3KI_GmbH">
+      <org>P3KI GmbH</org>
+      <uri>mailto:iana&amp;p3ki.com</uri>
+      <updated>2017-01-12</updated>
     </person>
     <person id="PACE_Anti-Piracy">
       <org>PACE Anti-Piracy</org>
@@ -111685,6 +112966,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>Performance Co-Pilot (PCP) Project</org>
       <uri>mailto:kenj&amp;internode.on.net</uri>
       <updated>2013-10-09</updated>
+    </person>
+    <person id="Pete_Brownlow">
+      <name>Pete Brownlow</name>
+      <uri>mailto:merg&amp;upsys.co.uk</uri>
+      <updated>2017-01-03</updated>
     </person>
     <person id="Pete_Camble">
       <name>Pete Camble</name>
@@ -112986,6 +114272,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:richard_jones1&amp;symantec.com</uri>
       <updated>2009-05-26</updated>
     </person>
+    <person id="Richard_Kennedy">
+      <name>Richard Kennedy</name>
+      <uri>mailto:Richard&amp;smallcellforum.org</uri>
+      <updated>2017-01-24</updated>
+    </person>
     <person id="Richard_Lamb">
       <name>Richard Lamb</name>
       <uri>mailto:rlamb&amp;microsoft.com</uri>
@@ -113167,6 +114458,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Rob Cosgrove</name>
       <uri>mailto:rob&amp;alice.net</uri>
     </person>
+    <person id="Rob_Earhart">
+      <name>Rob Earhart</name>
+      <uri>mailto:rob&amp;1026labs.com</uri>
+      <updated>2016-09-27</updated>
+    </person>
     <person id="Rob_Graber">
       <name>Rob Graber</name>
       <uri>mailto:r.graber&amp;austinlane.com</uri>
@@ -113279,6 +114575,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Robert A. Kukura</name>
       <uri>mailto:kukura&amp;apollo.hp.com</uri>
     </person>
+    <person id="Robert_Ammon">
+      <name>Robert Ammon</name>
+      <uri>mailto:rammon&amp;curtisswright.com</uri>
+      <updated>2016-12-14</updated>
+    </person>
     <person id="Robert_Armes">
       <name>Robert Armes</name>
       <uri>mailto:rarmes&amp;axarte.com</uri>
@@ -113347,6 +114648,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Robert_E_Minnear">
       <name>Robert E. Minnear</name>
       <uri>mailto:minnear&amp;ipsilon.com</uri>
+    </person>
+    <person id="Robert_E_Tomenchok_Jr">
+      <name>Robert E. Tomenchok Jr.</name>
+      <uri>mailto:Rob&amp;AlliedElectronics.com</uri>
+      <updated>2016-11-29</updated>
     </person>
     <person id="Robert_Eden">
       <name>Robert Eden</name>
@@ -113478,6 +114784,7 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Robert_Ripberger">
       <name>Robert Ripberger</name>
       <uri>mailto:rip&amp;lan-aces.com</uri>
+      <updated>2017-02-08</updated>
     </person>
     <person id="Robert_Shaffer">
       <name>Robert Shaffer</name>
@@ -113591,6 +114898,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Robin_Uyeshiro">
       <name>Robin Uyeshiro</name>
       <uri>mailto:robin_u&amp;adtech-inc.com</uri>
+    </person>
+    <person id="Robot_Framework_Foundation">
+      <org>Robot Framework Foundation</org>
+      <uri>mailto:robotframework-foundation&amp;googlegroups.com</uri>
+      <updated>2017-01-26</updated>
     </person>
     <person id="Rod_Waltermann">
       <name>Rod Waltermann</name>
@@ -113888,6 +115200,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Roni_Moshitzky">
       <name>Roni Moshitzky</name>
       <uri>mailto:rmosh&amp;checkpoint.com</uri>
+    </person>
+    <person id="Ronny_Krüger">
+      <name>Ronny Krüger</name>
+      <uri>mailto:from-iana&amp;softvise.de</uri>
+      <updated>2016-11-10</updated>
     </person>
     <person id="Ronnie_De_Giorgio">
       <name>Ronnie De Giorgio</name>
@@ -114250,6 +115567,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Sailalong_Software">
       <name>Sailalong Software</name>
       <uri>mailto:CustomerService&amp;sailalong.com</uri>
+    </person>
+    <person id="Saku_Lahteenmaki">
+      <name>Saku Lähteenmäki</name>
+      <uri>mailto:saku.lahteenmaki&amp;kpatents.com</uri>
+      <updated>2017-05-12</updated>
     </person>
     <person id="Salvo_Nassisi">
       <name>Salvo Nassisi</name>
@@ -114949,6 +116271,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Simon Chinnick</name>
       <uri>mailto:support&amp;cogsys.co.uk</uri>
     </person>
+    <person id="Simon_Croome">
+      <name>Simon Croome</name>
+      <uri>mailto:simon.croome&amp;storageos.com</uri>
+      <updated>2017-03-03</updated>
+    </person>
     <person id="Simon_Edwards">
       <name>Simon Edwards</name>
     </person>
@@ -115091,12 +116418,17 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Slawomir Krzesinski</name>
       <uri>mailto:slavek&amp;optiwave.com</uri>
     </person>
+    <person id="Small_Cell_Forum">
+      <org>Small Cell Forum</org>
+      <uri>mailto:Richard&amp;smallcellforum.org</uri>
+      <updated>2017-01-24</updated>
+    </person>
     <person id="SmarDTV">
       <org>SmarDTV</org>
       <uri>mailto:vincent.demortier&amp;smardtv.com</uri>
       <updated>2015-03-04</updated>
     </person>
-    <person id="Smart_Apps_LTD">
+    <person id="Small_Apps_LTD">
       <org>Smart Apps LTD</org>
       <uri>mailto:info&amp;smartapps.co</uri>
       <updated>2011-10-11</updated>
@@ -115124,6 +116456,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>softthere.com</org>
       <uri>mailto:technical&amp;softthere.com</uri>
       <updated>2011-10-17</updated>
+    </person>
+    <person id="Softvise_GmbH">
+      <org>Softvise GmbH</org>
+      <uri>mailto:from-iana&amp;softvise.de</uri>
+      <updated>2016-11-10</updated>
     </person>
     <person id="Software_Horizons_In">
       <org>Software Horizons Inc.</org>
@@ -115188,6 +116525,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Spencer Teran</name>
       <uri>mailto:steran&amp;ars.com</uri>
       <updated>2004-11</updated>
+    </person>
+    <person id="SPG_Controls_Ltd">
+      <org>SPG Controls Ltd</org>
+      <uri>mailto:steveb&amp;spgcontrols.com</uri>
+      <updated>2017-03-27</updated>
     </person>
     <person id="Sphera_Software">
       <name>Sphera Software</name>
@@ -115270,6 +116612,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Stanley_Knutson">
       <name>Stanley Knutson</name>
       <uri>mailto:Stanley.Knutson&amp;ktiworld.com</uri>
+    </person>
+    <person id="Statsports_International">
+      <org>Statsports_International</org>
+      <uri>mailto:iana_liaison&amp;statsports.com</uri>
+      <updated>2016-12-22</updated>
     </person>
     <person id="Stefan_Auweiler">
       <name>Stefan Auweiler</name>
@@ -115493,6 +116840,12 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:steveb&amp;pacom.com</uri>
       <updated>2002-03</updated>
     </person>
+    <person id="Steve_Barton_2">
+      <name>Steve Barton</name>
+      <org>SPG Controls Ltd</org>
+      <uri>mailto:steveb&amp;spgcontrols.com</uri>
+      <updated>2017-03-27</updated>
+    </person>
     <person id="Steve_Beigel">
       <name>Steve Beigel</name>
       <uri>mailto:ublueb!steve&amp;uunet.uu.net</uri>
@@ -115679,6 +117032,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Steve Van Duser</name>
       <uri>mailto:steve.vanduser&amp;bestpower.gensig.com</uri>
     </person>
+    <person id="Steve_Wiseman">
+      <name>Steve Wiseman</name>
+      <uri>mailto:steve.wiseman&amp;intelliadmin.com</uri>
+      <updated>2016-11-18</updated>
+    </person>
     <person id="Steve_Zellers">
       <name>Steve Zellers</name>
       <uri>mailto:zellers&amp;apple.com</uri>
@@ -115806,6 +117164,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <org>StorageCraft Technology Corporation</org>
       <uri>mailto:dave.mcconkie&amp;storagecraft.com</uri>
       <updated>2014-12-17</updated>
+    </person>
+    <person id="StorageOS">
+      <org>StorageOS</org>
+      <uri>mailto:simon.croome&amp;storageos.com</uri>
+      <updated>2017-03-03</updated>
     </person>
     <person id="StorMagic_Ltd">
       <org>StorMagic Ltd</org>
@@ -116506,6 +117869,12 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Thomas_Obermair">
       <name>Thomas Obermair</name>
       <uri>mailto:tommy&amp;inlab.m.eunet.de</uri>
+    </person>
+    <person id="Thomas_Quarendon">
+      <name>Thomas Quarendon</name>
+      <org>World Programming Limited</org>
+      <uri>mailto:tom.quarendon&amp;worldprogramming.com</uri>
+      <updated>2017-04-04</updated>
     </person>
     <person id="Thomas_Revesz">
       <name>Thomas Revesz</name>
@@ -117508,6 +118877,16 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Valery Fremaux</name>
       <uri>mailto:vf&amp;eisti.fr</uri>
     </person>
+    <person id="Valley_Information_Systems_Inc">
+      <org>Valley Information Systems, Inc.</org>
+      <uri>mailto:info@valleyinfosys.com&gt;</uri>
+      <updated>2017-05-12</updated>
+    </person>
+    <person id="Van_Doren_MES">
+      <org>Van Doren MES</org>
+      <uri>mailto:mes&amp;vandoren.nl</uri>
+      <updated>2016-10-31</updated>
+    </person>
     <person id="Van_Jacobson">
       <name>Van Jacobson</name>
       <uri>mailto:van&amp;ee.lbl.gov</uri>
@@ -117693,6 +119072,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:virgilio&amp;harpax.com</uri>
       <updated>2002-07</updated>
     </person>
+    <person id="Virtual_Electric_Inc">
+      <org>Virtual Electric Inc.</org>
+      <uri>mailto:dwyatt&amp;vei.org</uri>
+      <updated>2016-10-07</updated>
+    </person>
     <person id="VirtualHere_Pty_Ltd">
       <org>VirtualHere Pty. Ltd.</org>
       <uri>mailto:mail&amp;virtualhere.com</uri>
@@ -117730,10 +119114,10 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Vitaly Revsin</name>
       <uri>mailto:vitaly&amp;netapp.com</uri>
     </person>
-    <person id="Vladimir_Bickov">
-      <name>Vladimir Bickov</name>
-      <uri>mailto:vbickov&amp;coderebel.com</uri>
-      <updated>2007-08-20</updated>
+    <person id="Volodymyr_Bykov">
+      <name>Volodymyr_Bykov</name>
+      <uri>mailto:vbickov&amp;gmail.com</uri>
+      <updated>2016-11-23</updated>
     </person>
     <person id="Vladimir_Legalov">
       <name>Vladimir Legalov</name>
@@ -117929,6 +119313,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <uri>mailto:mconley&amp;wi-fi.org</uri>
       <updated>2013-12-31</updated>
     </person>
+    <person id="Wi-Fi_Alliance_3">
+      <org>Wi-Fi Alliance</org>
+      <uri>mailto:gjain&amp;wi-fi.org</uri>
+      <updated>2017-03-14</updated>
+    </person>
     <person id="Wi-SUN_Alliance">
       <org>Wi-SUN Alliance</org>
       <uri>mailto:admin&amp;wi-sun.org</uri>
@@ -118003,6 +119392,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>William LePera</name>
       <uri>mailto:lepera&amp;us.ibm.com</uri>
       <updated>2008-06-18</updated>
+    </person>
+    <person id="William_Lupton">
+      <name>William Lupton</name>
+      <uri>mailto:wlupton&amp;broadband-forum.org</uri>
+      <updated>2017-02-22</updated>
     </person>
     <person id="William_McDonald">
       <name>William McDonald</name>
@@ -118138,6 +119532,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>World DAB</name>
       <uri>mailto:worlddab_irc&amp;worlddab.org</uri>
     </person>
+    <person id="World_Programming_Limited">
+      <org>World Programming Limited</org>
+      <uri>mailto:support&amp;worldprogramming.com</uri>
+      <updated>2017-04-04</updated>
+    </person>
     <person id="World_Fusion">
       <name>World Fusion</name>
       <uri>mailto:net&amp;worldfusion.com</uri>
@@ -118182,6 +119581,11 @@ implementations.  See RFC 3692 for details.</footnote>
     <person id="Xnet_Communications">
       <name>Xnet Communications</name>
       <uri>mailto:croco&amp;xdsnet.de</uri>
+    </person>
+    <person id="Xpra">
+      <org>Xpra</org>
+      <uri>mailto:xpra&amp;xpra.org</uri>
+      <updated>2016-10-05</updated>
     </person>
     <person id="XuiS_Software_Ltd">
       <name>XuiS Software Ltd.</name>
@@ -118397,6 +119801,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Yuri Myakotin</name>
       <uri>mailto:yuri&amp;ym-com.net</uri>
       <updated>2014-01-07</updated>
+    </person>
+    <person id="Yurii_Rashkovskii">
+      <name>Yurii Rashkovskii</name>
+      <uri>mailto:yrashk&amp;eventsourcing.com</uri>
+      <updated>2017-04-18</updated>
     </person>
     <person id="Yusuke_Asai">
       <name>Yusuke Asai</name>
